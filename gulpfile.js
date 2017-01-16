@@ -9,8 +9,8 @@ const destName = 'public';
 
 //cборка стилей
 gulp.task('style', function() {
-    //проходит по всем папкам в source/less и берет все файла с расширением .less
-    return gulp.src('./source/less/**/*.less')
+    //берёт файл style.less
+    return gulp.src('./source/less/style.less')
         .pipe(less()) // переводит less в обычный css
         .pipe(concat('style.css')) // соединяем все файлы в один style.css
         .pipe(cleanCSS({
