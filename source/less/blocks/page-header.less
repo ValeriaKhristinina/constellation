@@ -1,18 +1,29 @@
-.page-header{
+.page-header {
   .container();
-  max-width: 480px;
   min-height: 100px;
+  margin-bottom: 85px;
   border: 2px solid black;
-}
 
-.page-header__upper-panel{
+}
+.page-header__upper-panel {
   display: flex;
   justify-content: space-between;
 }
-
-.page-header__title{
-  font-size: 15px;
+.page-header__title {
+  font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 10px;
   text-align: center;
+  margin: 0 0 35px;
+}
+.page-header__slogan {
+  font-family: "Georgia","Arial", sans-serif;
+  font-style: italic;
+  margin: 0 60px;
+  text-align: center;
+  color: @color-slogan;
+
+  @media @desktop-widths{
+    margin: 0;
+  }
 }
