@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c1c1c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Dark_Magnifying_Glass_Outline_copy" data-name="Dark Magnifying Glass Outline copy" class="cls-1" d="M91,494.5l-6.094-6.178L80.052,483.4a21.44,21.44,0,1,0-17.536,9.216,21.2,21.2,0,0,0,13.153-4.589l8.342,8.456a2.854,2.854,0,0,0,.33.271L86.555,499Zm-28.482-7.01a16.645,16.645,0,1,1,13.016-6.515,16.8,16.8,0,0,1-2.391,2.549A16.252,16.252,0,0,1,62.517,487.486Z" transform="translate(-41 -449)"/>
+</svg>
