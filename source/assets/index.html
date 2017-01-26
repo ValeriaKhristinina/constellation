@@ -35,7 +35,7 @@
         </section>
 
         <section class="search">
-          <a class="search__icon  search-icon--hidden" href="#">Search...</a>
+          <a class="search__icon" href="#">Search...</a>
           <div class="search__wrapper  search-wrapper--closed">
             <button class="search__closed" type="button" name="button">Closed</button>
             <form class="search-form">
@@ -49,10 +49,10 @@
       </div>
 
       <section class="page-header__social  social">
-        <a class="social__btn social__bt-dr" href="#">Dribbble</a>
-        <a class="social__btn social__bt-ld" href="#">Linkedin</a>
-        <a class="social__btn social__bt-in" href="#">Instagram</a>
-        <a class="social__btn social__bt-tw" href="#">Twitter</a>
+        <a class="social__btn  social__bt-dr" href="#">Dribbble</a>
+        <a class="social__btn  social__bt-ld" href="#">Linkedin</a>
+        <a class="social__btn  social__bt-in" href="#">Instagram</a>
+        <a class="social__btn  social__bt-tw" href="#">Twitter</a>
       </section>
       <h1 class="page-header__title">Constellation</h1>
       <div class="page-header__slogan">If i create from the heart, nearly everything works; if from the head, almost nothing.</div>
@@ -61,12 +61,80 @@
   </header>
 
   <main class="main-content">
-    <article class="post">
-      <div class="post-image">
-      </div>
-      <time class="post__date" pubdate datetime="2014-08-12">12 August 2014</time>
+    <section class="news-feed">
 
-    </article>
+      <article class="post">
+        <div class="post__cover">
+          <div class="post__cover--center">
+            <div class="post__hashtags">
+              <span class="post__hashtag-item"></span>
+            </div>
+            <h2 class="post__title"></h2>
+            </div>
+          </div>
+        <div class="post__info-wrapper">
+          <div class="post__info-left">
+            <time class="post__date" pubdate datetime="2014-08-12">12 August 2014</time>
+            /
+            <span class="post__comment">1 Comment</span>
+          </div>
+          <div class="post__info-right social">
+            <a class="social__btn  social__bt-mail" href="#">Mail</a>
+            <a class="social__btn  social__bt-fb" href="#">Facebook</a>
+            <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post__cover  post__cover--green">
+          <div class="post__cover--center">
+            <div class="post__hashtags">
+              <span class="post__hashtag-item">#design</span>
+              <span class="post__hashtag-item">#inspiration</span>
+            </div>
+            <h2 class="post__title">View Gallery</h2>
+          </div>
+        </div>
+        <div class="post__info-wrapper">
+          <div class="post__info-left">
+            <time class="post__date" pubdate datetime="2014-08-04">04 August 2014</time>
+            /
+            <span class="post__comment">1 Comment</span>
+          </div>
+          <div class="post__info-right social">
+            <a class="social__btn  social__bt-mail" href="#">Mail</a>
+            <a class="social__btn  social__bt-fb" href="#">Facebook</a>
+            <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post__cover  post__no-cover">
+          <div class="post__cover--center">
+            <div class="post__hashtags">
+              <span class="post__hashtag-item"></span>
+            </div>
+            <h2 class="post__title"></h2>
+          </div>
+        </div>
+        <span class="post__hashtag"></span>
+        <span class="post__hashtag"></span>
+        <div class="post__info-wrapper">
+          <div class="post__info-left">
+            <time class="post__date" pubdate datetime="2014-08-02">02 August 2014</time>
+            /
+            <span class="post__comment">1 Comment</span>
+          </div>
+          <div class="post__info-right social">
+            <a class="social__btn  social__bt-mail" href="#">Mail</a>
+            <a class="social__btn  social__bt-fb" href="#">Facebook</a>
+            <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+          </div>
+        </div>
+      </article>
+    </section>
 
   </main>
 </body>
