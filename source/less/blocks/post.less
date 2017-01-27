@@ -1,9 +1,28 @@
 .post {
+  position: relative;
   display: inline-block;
   width: 440px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: bottom;
 
   @media @desktop-widths{
     width: 305px;
+    margin-right: 20px;
+  }
+
+  .post__info-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    width: 440px;
+    height: 1px;
+    background-color: @clr-border-bottom;
+
+      @media @desktop-widths{
+        width: 305px;
+      }
   }
 
 }
@@ -11,18 +30,15 @@
   position: relative;
   width: 440px;
   height: 440px;
+
   margin-bottom: 40px;
   background-color: @bg-lifhtgrey;
+
+    @media @desktop-widths{
+      width: 305px;
+    }
 }
-.post__cover::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -20px;
-  width: 440px;
-  height: 1px;
-  background-color: @clr-border-bottom;
-}
+
 
 .post__cover--green{
   background-color: @bg-post-green;
@@ -30,6 +46,7 @@
 
 .post__no-cover{
   height: auto;
+  background-color: transparent;
 }
 
 .post__info-wrapper {
