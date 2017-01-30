@@ -1,19 +1,28 @@
 .post {
-  // можно флекбсокасм светстать
-  position: relative;
+
   display: block;
+  position: relative;
+
   width: 440px;
   font-size: 16px;
   text-align: center;
   vertical-align: bottom;
 
-  &:first-child{
-    margin-left: 0;
+  &:nth-child(4n){
+    margin-right: 0;
+  };
+
+  &:nth-child(n+5){
+    display: none;
   };
 
   @media @desktop-widths{
     width: 305px;
-    margin-left: 20px;
+    margin-right: 20px;
+
+    &:nth-child(n+5){
+      display: block;
+    };
   }
 
   .post__info-wrapper::before {
