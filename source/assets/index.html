@@ -38,7 +38,7 @@
           <a class="search__icon" href="#">Search...</a>
           <div class="search__wrapper  search-wrapper--closed">
             <button class="search__closed" type="button" name="button">Closed</button>
-            <form class="search-form">
+            <form class="search__form">
               <input type="search" name="search" id="search-form" placeholder="Type something...">
             </form>
             <a class="search__example" href="#">user interface design</a>
@@ -49,10 +49,10 @@
       </div>
 
       <section class="page-header__social  social">
-        <a class="social__btn  social__bt-dr" href="#">Dribbble</a>
-        <a class="social__btn  social__bt-ld" href="#">Linkedin</a>
-        <a class="social__btn  social__bt-in" href="#">Instagram</a>
-        <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+        <a class="social__btn  social__btn-dr" href="#">Dribbble</a>
+        <a class="social__btn  social__btn-ld" href="#">Linkedin</a>
+        <a class="social__btn  social__btn-in" href="#">Instagram</a>
+        <a class="social__btn  social__btn-tw" href="#">Twitter</a>
       </section>
       <h1 class="page-header__title">Constellation</h1>
       <div class="page-header__slogan">If i create from the heart, nearly everything works; if from the head, almost nothing.</div>
@@ -64,14 +64,12 @@
     <section class="news-feed">
 
       <article class="post">
-        <div class="post__cover">
-          <div class="post__cover--center">
-            <div class="post__hashtags">
-              <span class="post__hashtag-item"></span>
-            </div>
-            <h2 class="post__title"></h2>
-            </div>
+        <div class="post__cover  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag"></span>
           </div>
+          <h2 class="post__title"></h2>
+        </div>
         <div class="post__info-wrapper">
           <div class="post__info-left">
             <time class="post__date" pubdate datetime="2014-08-12">12 August 2014</time>
@@ -87,14 +85,12 @@
       </article>
 
       <article class="post">
-        <div class="post__cover  post__cover--green">
-          <div class="post__cover--center">
-            <div class="post__hashtags">
-              <span class="post__hashtag-item">#design</span>
-              <span class="post__hashtag-item">#inspiration</span>
-            </div>
-            <h2 class="post__title">View Gallery</h2>
+        <div class="post__cover  post__cover--green  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag-item">#design</span>
+            <span class="post__hashtag-item">#inspiration</span>
           </div>
+          <h2 class="post__title">View Gallery</h2>
         </div>
         <div class="post__info-wrapper">
           <div class="post__info-left">
@@ -111,14 +107,12 @@
       </article>
 
       <article class="post">
-        <div class="post__cover  post__no-cover">
-          <div class="post__cover--center">
-            <div class="post__hashtags">
-              <span class="post__hashtag-item">#design</span>
-              <span class="post__hashtag-item">#inspiration</span>
-            </div>
-            <h2 class="post__title">Howewer beautiful the strategy, you should occasionally look at the results</h2>
+        <div class="post__cover  post__no-cover  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag-item">#design</span>
+            <span class="post__hashtag-item">#inspiration</span>
           </div>
+          <h2 class="post__title">Howewer beautiful the strategy, you should occasionally look at the results</h2>
         </div>
         <div class="post__info-wrapper">
           <div class="post__info-left">
@@ -135,18 +129,38 @@
       </article>
 
       <article class="post">
-        <div class="post__cover">
-          <div class="post__cover--center">
-            <div class="post__hashtags">
-              <span class="post__hashtag-item">sss</span>
-              <span class="post__hashtag-item"></span>
-            </div>
-            <h2 class="post__title"></h2>
+        <div class="post__cover  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag-item"></span>
+            <span class="post__hashtag-item"></span>
           </div>
+          <h2 class="post__title"></h2>
         </div>
         <div class="post__info-wrapper">
           <div class="post__info-left">
-            <time class="post__date" pubdate datetime="2014-08-04">04 August 2014</time>
+            <time class="post__date" pubdate datetime="2014-07-25">25 July 2014</time>
+            /
+            <span class="post__comment">11 Comment</span>
+          </div>
+          <div class="post__info-right social">
+            <a class="social__btn  social__bt-mail" href="#">Mail</a>
+            <a class="social__btn  social__bt-fb" href="#">Facebook</a>
+            <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post__cover  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag-item">#design</span>
+            <span class="post__hashtag-item">#inspirations</span>
+          </div>
+          <h2 class="post__title">Objects nd their manufacture are inseparable, you understand a product if you understand how it's made.</h2>
+        </div>
+        <div class="post__info-wrapper">
+          <div class="post__info-left">
+            <time class="post__date" pubdate datetime="2014-07-17">17 July 2014</time>
             /
             <span class="post__comment">1 Comment</span>
           </div>
@@ -157,9 +171,181 @@
           </div>
         </div>
       </article>
+
+      <article class="post">
+        <div class="post__cover  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag-item"></span>
+            <span class="post__hashtag-item"></span>
+          </div>
+          <h2 class="post__title"></h2>
+        </div>
+        <div class="post__info-wrapper">
+          <div class="post__info-left">
+            <time class="post__date" pubdate datetime="2014-07-23">23 July 2014</time>
+            /
+            <span class="post__comment">5 Comment</span>
+          </div>
+          <div class="post__info-right social">
+            <a class="social__btn  social__bt-mail" href="#">Mail</a>
+            <a class="social__btn  social__bt-fb" href="#">Facebook</a>
+            <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post__cover  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag-item"></span>
+            <span class="post__hashtag-item"></span>
+          </div>
+          <h2 class="post__title"></h2>
+        </div>
+        <div class="post__info-wrapper">
+          <div class="post__info-left">
+            <time class="post__date" pubdate datetime="2014-07-13">13 July 2014</time>
+            /
+            <span class="post__comment">1 Comment</span>
+          </div>
+          <div class="post__info-right social">
+            <a class="social__btn  social__bt-mail" href="#">Mail</a>
+            <a class="social__btn  social__bt-fb" href="#">Facebook</a>
+            <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post__cover  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag-item"></span>
+            <span class="post__hashtag-item"></span>
+          </div>
+          <h2 class="post__title"></h2>
+        </div>
+        <div class="post__info-wrapper">
+          <div class="post__info-left">
+            <time class="post__date" pubdate datetime="2014-07-02">2 July 2014</time>
+            /
+            <span class="post__comment">7 Comment</span>
+          </div>
+          <div class="post__info-right social">
+            <a class="social__btn  social__bt-mail" href="#">Mail</a>
+            <a class="social__btn  social__bt-fb" href="#">Facebook</a>
+            <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post__cover  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag-item"></span>
+            <span class="post__hashtag-item"></span>
+          </div>
+          <h2 class="post__title"></h2>
+        </div>
+        <div class="post__info-wrapper">
+          <div class="post__info-left">
+            <time class="post__date" pubdate datetime="2014-07-23">23 July 2014</time>
+            /
+            <span class="post__comment">5 Comment</span>
+          </div>
+          <div class="post__info-right social">
+            <a class="social__btn  social__bt-mail" href="#">Mail</a>
+            <a class="social__btn  social__bt-fb" href="#">Facebook</a>
+            <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post__cover  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag-item"></span>
+            <span class="post__hashtag-item"></span>
+          </div>
+          <h2 class="post__title"></h2>
+        </div>
+        <div class="post__info-wrapper">
+          <div class="post__info-left">
+            <time class="post__date" pubdate datetime="2014-07-02">2 July 2014</time>
+            /
+            <span class="post__comment">7 Comment</span>
+          </div>
+          <div class="post__info-right social">
+            <a class="social__btn  social__bt-mail" href="#">Mail</a>
+            <a class="social__btn  social__bt-fb" href="#">Facebook</a>
+            <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post__cover  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag-item"></span>
+            <span class="post__hashtag-item"></span>
+          </div>
+          <h2 class="post__title"></h2>
+        </div>
+        <div class="post__info-wrapper">
+          <div class="post__info-left">
+            <time class="post__date" pubdate datetime="2014-07-13">13 July 2014</time>
+            /
+            <span class="post__comment">1 Comment</span>
+          </div>
+          <div class="post__info-right social">
+            <a class="social__btn  social__bt-mail" href="#">Mail</a>
+            <a class="social__btn  social__bt-fb" href="#">Facebook</a>
+            <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post__cover  post__cover--center">
+          <div class="post__hashtags">
+            <span class="post__hashtag-item"></span>
+            <span class="post__hashtag-item"></span>
+          </div>
+          <h2 class="post__title"></h2>
+        </div>
+        <div class="post__info-wrapper">
+          <div class="post__info-left">
+            <time class="post__date" pubdate datetime="2014-07-17">17 July 2014</time>
+            /
+            <span class="post__comment">1 Comment</span>
+          </div>
+          <div class="post__info-right social">
+            <a class="social__btn  social__bt-mail" href="#">Mail</a>
+            <a class="social__btn  social__bt-fb" href="#">Facebook</a>
+            <a class="social__btn  social__bt-tw" href="#">Twitter</a>
+          </div>
+        </div>
+      </article>
+      <button class="news-feed__btn  btn" type="button" name="button">Load more posts</button>
+
+
     </section>
 
   </main>
+
+  <footer class="page-footer">
+    <section class="page-footer social">
+      <a class="social__btn  social__btn-dr" href="#">Dribbble</a>
+      <a class="social__btn  social__btn-ld" href="#">Linkedin</a>
+      <a class="social__btn  social__btn-in" href="#">Instagram</a>
+      <a class="social__btn  social__btn-tw" href="#">Twitter</a>
+    </section>
+    <section class="page-footer__copyright">
+      <p>Made with love at EL Passion 2014</p>
+      <p>This work is licensed under a Creative Commons</p>
+      <p>Attribution-NonCommerical-NoDerivatives 4.0 International License.</p>
+
+    </section>
+  </footer>
 </body>
 
 </html>
