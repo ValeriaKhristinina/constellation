@@ -1,7 +1,25 @@
-.user-block{
-  margin-bottom: 67px;
-}
+.user-block {
 
-.user-block__wrapper--closed{
+}
+.user-block__wrapper--closed {
   display: none;
+}
+.user-block__toggle {
+  position: relative;
+  text-indent: -9999px;
+  width: 25px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: auto;
+}
+.user-block__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 14px;
+  background: linear-gradient(to bottom, @clr-toggle 20%,transparent 20%, transparent 40%, @clr-toggle 40%, @clr-toggle 60%, transparent 60%, transparent 80%, @clr-toggle 80%);
 }
