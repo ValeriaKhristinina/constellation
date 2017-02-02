@@ -3,10 +3,8 @@
   display: block;
   position: relative;
 
-  width: 440px;
+  max-width: 440px;
   font-size: 16px;
-  text-align: center;
-  vertical-align: bottom;
 
   &:nth-child(4n){
     margin-right: 0;
@@ -30,19 +28,15 @@
     position: absolute;
     left: 0;
     bottom: 80px;
-    width: 440px;
+    width: 100%;
     height: 1px;
-    background-color: @clr-border-bottom;
+    background-color: @clr-border;
 
       @media @desktop-widths{
         width: 305px;
       }
   }
 
-}
-
-.post__title{
-  margin: 0;
 }
 
 .post__cover {
@@ -58,16 +52,48 @@
     }
 }
 
-
 .post__cover--green{
   background-color: @bg-post-green;
 }
 
+.post__cover--center{
+  text-align: center;
+}
+
 .post__no-cover{
+  height: auto;
   background-color: transparent;
 }
 
 .post__info-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.post__title{
+  font-family: "Droid Serif", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0;
+}
+
+.post__title--white{
+  color:@clr-white;
+}
+
+.post__date{
+  color: @clr-date;
+}
+
+.post__comment{
+  color: @clr-darkgreen;
+}
+
+.post__hashtag-item {
+  font-weight: normal;
+  color: @clr-darkgreen;
+}
+.post__hashtag-item--white{
+  color: @clr-white;
+
 }
