@@ -24,6 +24,7 @@
       display: block;
     };
   }
+}
 
   .post__info-wrapper {
     display: flex;
@@ -35,7 +36,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 34px;
+    bottom: 36px;
     width: 100%;
     height: 1px;
     background-color: @clr-border;
@@ -46,9 +47,10 @@
       }
   }
 
-}
-
 .post__cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   width: 440px;
   height: 440px;
@@ -70,9 +72,18 @@
 }
 
 .post__no-cover{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: auto;
   background-color: transparent;
+
+  @media @desktop-widths{
+    height: 440px;
+  }
 }
+
+
 
 
 
