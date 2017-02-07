@@ -13,22 +13,28 @@
     <div class="page-header__wrapper">
       <div class="page-header__upper-panel">
         <section class="user-block">
-          <button class="user-block__toggle" type="button">Open menu</button>
+          <button class="user-block__toggle  user-block__toggle--open" type="button">Open menu</button>
           <div class="user-block__wrapper  user-block__wrapper--closed">
+            <button class="user-block__toggle  user-block__toogle--closed" type="button" name="button">Close</button>
             <section class="login">
               <h2 class="login__title">Hello,</h2>
               <p class="login__description">Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.</p>
               <p class="login__description">Pellentesque facilisis.
                 <br> Nulla impediet sit amet magna.</p>
-              <div class="login__social  social"></div>
+              <section class="login__social  social">
+                <a class="social__btn  social__btn-dr" href="#">Dribbble</a>
+                <a class="social__btn  social__btn-ld" href="#">Linkedin</a>
+                <a class="social__btn  social__btn-in" href="#">Instagram</a>
+                <a class="social__btn  social__btn-tw" href="#">Twitter</a>
+              </section>
             </section>
 
             <nav class="main-navigation">
               <ul class="main-navigation__list">
-                <li class="main-navigation__item">Home</li>
-                <li class="main-navigation__item">Posts</li>
-                <li class="main-navigation__item">Gallery</li>
-                <li class="main-navigation__item">Contact</li>
+                <li class="main-navigation__item"><a href="#">Home</a></li>
+                <li class="main-navigation__item"><a href="#">Posts</a></li>
+                <li class="main-navigation__item"><a href="#">Gallery</a></li>
+                <li class="main-navigation__item"><a href="#">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -151,7 +157,7 @@
       </article>
 
       <article class="post">
-        <div class="post__cover">
+        <div class="post__cover post__no-cover">
           <div class="post__hashtags">
             <span class="post__hashtag-item">#design</span>
             <span class="post__hashtag-item">#inspirations</span>
