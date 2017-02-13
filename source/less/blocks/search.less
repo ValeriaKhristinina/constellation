@@ -1,15 +1,18 @@
-.search{
-
-}
-
-.search-icon{
+.search {}
+.search-icon {
   font-size: 0;
-
-  @media @desktop-widths{
+  @media @desktop-widths {
     font-size: 14px;
   }
 }
+.search__wrapper--closed {
+  display: none;
+}
+.search__wrapper {
+  position: absolute;
+  z-index: 15;
+}
 
-.search-wrapper--closed{
-  display:none;
+.search__closed{
+
 }
