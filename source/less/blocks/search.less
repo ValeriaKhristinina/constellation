@@ -11,8 +11,13 @@
 }
 .search__wrapper {
   position: absolute;
+  width: 440px;
   padding-top: 225px;
   z-index: 15;
+
+  @media @desktop-widths{
+    width: 902px;
+  }
 }
 
 .search__closed{
@@ -27,5 +32,31 @@
 }
 
 .search__form{
+  margin-bottom: 32px;
 
+}
+
+.search__form input{
+  font-size: 36px;
+  width: 100%;
+  padding-left: 45px;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid @clr-black;
+}
+
+.search__example-list{
+  padding-left: 45px;
+}
+
+.search__example-list li{
+  margin-bottom: 22px;
+}
+
+.search__example{
+  color:@clr-suvagrey;
+
+  &:active{
+    color:@clr-suvagrey;
+  }
 }
