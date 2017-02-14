@@ -1,4 +1,5 @@
-.search {}
+.search {
+}
 .search-icon {
   font-size: 0;
   @media @desktop-widths {
@@ -6,13 +7,25 @@
   }
 }
 .search__wrapper--closed {
-  display: none;
+  display: block;
 }
 .search__wrapper {
   position: absolute;
+  padding-top: 225px;
   z-index: 15;
 }
 
 .search__closed{
+  position: absolute;
+  top: 20px;
+  right: -20px;
+}
+
+.search__closed.btn-toggle__closed::before,
+.search__closed.btn-toggle__closed::after{
+  background-color: @clr-black;
+}
+
+.search__form{
 
 }

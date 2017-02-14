@@ -5,24 +5,17 @@
   cursor: pointer;
 }
 
-
-.btn__toogle--closed {
-  position: absolute;
-  top:26px;
-  right:20px;
-  width: 15px;
-  height: 15px;
-
+.btn-toggle__closed{
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 8px;
     left: 0;
     width: 15px;
-    height: 1px;
-    background-color: white;
+    height: 2px;
+    background-color: @clr-white;
     z-index: 3;
   }
 
