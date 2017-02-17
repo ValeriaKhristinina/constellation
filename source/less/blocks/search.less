@@ -11,12 +11,13 @@
   }
 }
 .search__wrapper--closed {
-  display: none;
+  display: block;
 }
 .search__wrapper {
-  .container();
-  position: absolute;
-  margin-top: 225px;
+  position: fixed;
+  top: 0;
+  left:33%;
+  margin-top: 210px;
   z-index: 15;
 
   @media @desktop-widths{
@@ -26,8 +27,8 @@
 
 .search__closed{
   position: absolute;
-  top: -220px;
-  right: -20px;
+  top: -200px;
+  right: -22px;
 
   @media @desktop-widths{
     display: none;
