@@ -1,4 +1,8 @@
 .search {
+
+  @media @desktop-widths{
+    z-index: 25;
+  }
 }
 .search-icon {
   font-size: 0;
@@ -7,12 +11,12 @@
   }
 }
 .search__wrapper--closed {
-  display: block;
+  display: none;
 }
 .search__wrapper {
+  .container();
   position: absolute;
-  width: 440px;
-  padding-top: 225px;
+  margin-top: 225px;
   z-index: 15;
 
   @media @desktop-widths{
@@ -22,8 +26,12 @@
 
 .search__closed{
   position: absolute;
-  top: 20px;
+  top: -220px;
   right: -20px;
+
+  @media @desktop-widths{
+    display: none;
+  }
 }
 
 .search__closed.btn-toggle__closed::before,
