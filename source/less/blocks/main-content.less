@@ -1,5 +1,16 @@
 .main-content{
   .container();
+
+  &--post-page{
+
+    @media @desktop-widths{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1280px;
+    }
+
+  }
 }
 
 .main-content__btn{
@@ -15,4 +26,30 @@
   border: 2px solid @clr-gainsboro;
   border-left-color: transparent;
   border-right-color: transparent;
+
+  &-previous{
+    border-bottom:none;
+    color: @clr-lightseagreen;
+  }
+
+&--big{
+  @media @desktop-widths{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 305px;
+    border: none;
+    text-transform: lowercase;
+  }
+  }
+}
+
+.main-content__btns{
+
+  @media @desktop-widths{
+    display: flex;
+    flex-direction: row;
+  }
+
+
 }

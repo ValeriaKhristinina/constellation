@@ -1,0 +1,36 @@
+.activity{
+  margin-bottom: 60px;
+}
+
+.activity__list-item{
+  position: relative;
+  font-family: 'DroidSerif', sans-serif;
+  font-style: italic;
+
+  padding: 10px 0;
+  padding-left: 33px;
+
+  border-bottom: 1px solid @clr-whitesmoke;
+
+  &:last-child{
+    border-bottom: none;
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: @clr-whitesmoke;
+  }
+}
+
+.activity__user{
+  color: @clr-caribbeangreen;
+}
+
+.activity__page{
+  color: @clr-caribbeangreen;
+}

@@ -1,38 +1,33 @@
 .post {
-
   display: block;
   position: relative;
-
-  max-width: 440px;
   font-size: 16px;
-
   margin-bottom: 60px;
 
-  &:nth-child(4n){
+  &:nth-child(4n) {
     margin-right: 0;
   };
-
-  &:nth-child(n+5){
+  &:nth-child(n+5) {
     display: none;
   };
-
-  @media @desktop-widths{
+  @media @desktop-widths {
     width: 305px;
     margin-right: 20px;
-
-    &:nth-child(n+5){
+    &:nth-child(n+5) {
       display: block;
-    };
+    }
+  }
+
+  &--big{
+    width: 670px;
   }
 }
+.post__info-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
 
-  .post__info-wrapper {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-  }
-
-  .post__info-wrapper::before {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -40,12 +35,13 @@
     width: 100%;
     height: 1px;
     background-color: @clr-gainsboro;
+    @media @desktop-widths {
+      bottom: 54px;
+      width: 100%;
+    }
+}
+}
 
-      @media @desktop-widths{
-        bottom: 54px;
-        width: 100%;
-      }
-  }
 
 .post__cover {
   display: flex;
@@ -54,65 +50,73 @@
   position: relative;
   width: 440px;
   height: 440px;
-
   margin-bottom: 40px;
+
   background-color: @clr-whitesmoke;
 
-    @media @desktop-widths{
-      width: 305px;
-    }
+  @media @desktop-widths {
+    width: 305px;
+  
+  }
+  &--green {
+    background-color: @clr-mediumspringgreen;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--big{
+
+    @media @desktop-widths {
+      width: 808px;
+      height: 440px;
+  }
+}
 }
 
-.post__cover--green{
-  background-color: @clr-mediumspringgreen;
-}
-
-.post__cover--center{
-  text-align: center;
-}
-
-.post__no-cover{
+.post__no-cover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: auto;
   background-color: transparent;
 
-  @media @desktop-widths{
+  @media @desktop-widths {
     height: 440px;
   }
 }
-
-
-.post__title{
+.post__title {
   font-family: "Droid Serif", sans-serif;
   font-style: italic;
   font-weight: normal;
-  margin: 0;
-  margin-bottom: 45px;
+
+  &--white {
+    color: @clr-white;
+  }
+
+  &--big{
+    width: 630px;
+  }
 }
 
-.post__title--white{
-  color:@clr-white;
-}
-
-.post__date{
+.post__date {
   color: @clr-grey;
 }
-
-.post__comment{
+.post__comment {
   color: @clr-caribbeangreen;
 }
-
-.post__hashtags{
+.post__hashtags {
   margin-bottom: 13px;
+
+  &--big{
+    width: 630px;
+  }
 }
 
 .post__hashtag-item {
   font-weight: normal;
   color: @clr-caribbeangreen;
-}
-.post__hashtag-item--white{
-  color: @clr-white;
 
+  &--white {
+    color: @clr-white;
+  }
 }
