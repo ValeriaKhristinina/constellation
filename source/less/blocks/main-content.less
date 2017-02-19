@@ -27,7 +27,7 @@
   border-left-color: transparent;
   border-right-color: transparent;
 
-  &-previous{
+  &-next{
     border-bottom:none;
     color: @clr-lightseagreen;
   }
@@ -35,11 +35,12 @@
 &--big{
   @media @desktop-widths{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: flex-start;
     width: 305px;
     border: none;
     text-transform: lowercase;
+    color: @clr-lightseagreen
   }
   }
 }
